@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/Bhuang-Dubbo-API/pom.xml" />
         <option value="$PROJECT_DIR$/Bhuang-Dubbo-Provider/pom.xml" />
         <option value="$PROJECT_DIR$/Bhuang-Dubbo-Consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/Bhuang-Dubbo-Feature-Test/pom.xml" />
       </list>
     </option>
   </component>

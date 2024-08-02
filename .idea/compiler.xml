@@ -9,6 +9,7 @@
         <module name="Bhuang-Dubbo-API" />
         <module name="Bhuang-Dubbo-Provider" />
         <module name="Bhuang-Dubbo-Consumer" />
+        <module name="Bhuang-Dubbo-Feature-Test" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,6 +18,7 @@
       <module name="Bhuang-Dubbo" options="" />
       <module name="Bhuang-Dubbo-API" options="-parameters" />
       <module name="Bhuang-Dubbo-Consumer" options="-parameters" />
+      <module name="Bhuang-Dubbo-Feature-Test" options="-parameters" />
       <module name="Bhuang-Dubbo-Provider" options="-parameters" />
     </option>
   </component>
