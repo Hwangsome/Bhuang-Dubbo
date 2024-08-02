@@ -3,6 +3,8 @@ dubbo:
     name: Bhuang-Dubbo-Provider
   protocol:
     name: dubbo
+#    使用随机端口暴露服务，防止和本地其他服务冲突，可以不填，默认20880
     port: -1
   registry:
+#    使用zookeeper注册中心暴露服务地址
     address: zookeeper://${zookeeper.address:127.0.0.1}:2181
