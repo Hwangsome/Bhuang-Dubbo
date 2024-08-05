@@ -37,6 +37,10 @@ dubbo:
       port: 20880
 ```
 
+### 例子
+查看SimpleService
+
+
 上述配置示例表明，Dubbo 协议、REST 协议和 Triple 协议都可以在同一个端口（20880）上运行。
 
 
