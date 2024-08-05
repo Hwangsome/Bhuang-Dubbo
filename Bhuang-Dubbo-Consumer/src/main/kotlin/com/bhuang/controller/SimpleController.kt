@@ -9,11 +9,19 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class SimpleController {
 
-    @DubboReference
-    private lateinit var simpleService: SimpleService
+    @DubboReference(protocol = "dubbo")
+    private lateinit var dubboSimpleService: SimpleService
 
-    @GetMapping("/hello")
-    fun hello(): String {
-        return simpleService.sayHello("bhuang")
+    @DubboReference(protocol = "tri")
+    private lateinit var tripeSimpleService: SimpleService
+
+    @GetMapping("/dubbo/hello")
+    fun dubboHello(): String {
+        return dubboSimpleService.sayHello("bhuang")
+    }
+
+    @GetMapping("/tripe/hello")
+    fun triHello(): String {
+        return tripeSimpleService.sayHello("bhuang")
     }
 }

@@ -8,10 +8,11 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <artifactId>Bhuang-Dubbo-Consumer</artifactId>
+    <groupId>com.bhuang</groupId>
+    <artifactId>Bhuang-Dubbo-Feature-Test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Bhuang-Dubbo-Consumer</name>
-    <description>Bhuang-Dubbo-Consumer</description>
+    <name>Bhuang-Dubbo-Feature-Test</name>
+    <description>Bhuang-Dubbo-Feature-Test</description>
     <url/>
     <licenses>
         <license/>
@@ -35,20 +36,6 @@
             <groupId>com.bhuang</groupId>
             <artifactId>Bhuang-Dubbo-API</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>io.grpc</groupId>
-                    <artifactId>grpc-netty-shaded</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>io.grpc</groupId>
-                    <artifactId>grpc-protobuf</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>io.grpc</groupId>
-                    <artifactId>grpc-stub</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
 
         <!-- dubbo -->
@@ -56,6 +43,7 @@
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
         </dependency>
+        <!--		定义了 dubbo 和 zookeeper（以及对应的连接器 curator）的依赖。-->
         <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-dependencies-zookeeper-curator5</artifactId>
@@ -72,11 +60,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
