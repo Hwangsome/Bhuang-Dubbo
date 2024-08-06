@@ -102,3 +102,18 @@ zkCli.sh -server
 ls /dubbo/com.bhuang.api.SimpleService/providers
 [dubbo%3A%2F%2F10.0.29.28%3A20880%2Fcom.bhuang.api.SimpleService%3Fanyhost%3Dtrue%26application%3DBhuang-Dubbo-Provider%26background%3Dfalse%26deprecated%3Dfalse%26dubbo%3D2.0.2%26dynamic%3Dtrue%26executor-management-mode%3Ddefault%26file.cache%3Dtrue%26generic%3Dfalse%26interface%3Dcom.bhuang.api.SimpleService%26methods%3DsayHello%26pid%3D32974%26prefer.serialization%3Dfastjson2%2Chessian2%26release%3D3.2.0-beta.4%26service-name-mapping%3Dtrue%26side%3Dprovider%26timestamp%3D1722497090920]
 ```
+
+# dubbo admin
+## 1.0 环境
+- 这个项目的要求是java 8
+- zookeeper 需要先启动
+## 1.1 Compile from source
+1. Download code: `git clone https://github.com/apache/dubbo-admin.git`
+2. Change `dubbo-admin-server/src/main/resources/application.properties` configuration to make Admin points to the designated registries, etc.
+3. Build
+   - `mvn clean package -Dmaven.test.skip=true`
+4. Start
+   * `mvn --projects dubbo-admin-server spring-boot:run`
+     or
+   * `cd dubbo-admin-distribution/target; java -jar dubbo-admin-${project.version}.jar`
+5. Visit  `http://localhost:38080`, default username and password are `root`
