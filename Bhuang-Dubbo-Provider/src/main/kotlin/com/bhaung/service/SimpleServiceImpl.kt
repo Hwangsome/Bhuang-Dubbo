@@ -17,4 +17,8 @@ class SimpleServiceImpl: SimpleService {
     override fun sayHello(name: String): String {
         return "Hello $name"
     }
+
+    override fun sayHi(name: String): String {
+        return "Hi $name"
+    }
 }
